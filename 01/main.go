@@ -41,10 +41,3 @@ func main() {
 	fmt.Printf("P1: %d \n", overallMax[0])
 	fmt.Printf("P2: %d \n", overallMax[0]+overallMax[1]+overallMax[2])
 }
-
-func max(a int, b int) int {
-	if a >= b {
-		return a
-	}
-	return b
-}
