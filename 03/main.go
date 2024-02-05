@@ -43,7 +43,6 @@ func main() {
     for i := 0; i < len(splitContent) - 2; i += 3 {
         for _, c := range splitContent[i] {
             if strings.ContainsRune(splitContent[i + 1], c) && strings.ContainsRune(splitContent[i + 2], c) {
-                fmt.Printf("%d - %c - \n%s\n%s\n%s\n\n", i, c, splitContent[i], splitContent[i+1], splitContent[i+2])
                 if unicode.IsUpper(c) {
                     p2Score += int(c) - 38
                 } else {
